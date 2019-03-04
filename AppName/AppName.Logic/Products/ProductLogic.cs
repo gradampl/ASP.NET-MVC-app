@@ -39,7 +39,12 @@ namespace AppName.Logic.Products
 
         public Result<Product> GetById(int id)
         {
-            throw new NotImplementedException();
+            var product = _repository.GetById(id);
+            if (product == null)
+            {
+                return Result.Error<Product>($"Nie ma produktu o id {id}.");
+            }
+            return Result.Ok(product);
         }
     }
 }

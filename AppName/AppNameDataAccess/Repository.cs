@@ -16,7 +16,7 @@ namespace AppNameDataAccess
             Db = db;
         }
 
-        public void Addd(T model)
+        public void Add(T model)
         {
             Db.Set<T>().Add(model);
         }
@@ -40,5 +40,7 @@ namespace AppNameDataAccess
         {
             Db.SaveChanges();
         }
+
+        
     }
 }

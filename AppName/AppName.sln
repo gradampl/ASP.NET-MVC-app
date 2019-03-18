@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppName.Models", "AppName.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppName.DataAccess", "AppNameDataAccess\AppName.DataAccess.csproj", "{C002675B-1E35-40EB-BBA1-48C8988B1333}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppName.Logic", "AppName.Logic\AppName.Logic.csproj", "{3A6F0750-C721-4B0E-8C0E-16751FB2CDE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C002675B-1E35-40EB-BBA1-48C8988B1333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C002675B-1E35-40EB-BBA1-48C8988B1333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C002675B-1E35-40EB-BBA1-48C8988B1333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6F0750-C721-4B0E-8C0E-16751FB2CDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6F0750-C721-4B0E-8C0E-16751FB2CDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6F0750-C721-4B0E-8C0E-16751FB2CDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6F0750-C721-4B0E-8C0E-16751FB2CDE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

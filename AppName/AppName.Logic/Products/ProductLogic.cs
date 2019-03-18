@@ -26,7 +26,7 @@ namespace AppName.Logic.Products
             }
 
             //walidacja
-            _repository.Addd(product);
+            _repository.Add(product);
             _repository.SaveChanges();
 
             return Result.Ok(product);
@@ -34,7 +34,7 @@ namespace AppName.Logic.Products
 
         public Result<IEnumerable<Product>> GetAllActive()
         {
-            throw new NotImplementedException();
+            return Result.Ok(_repository.GetAllActive());
         }
 
         public Result<Product> GetById(int id)
@@ -44,6 +44,20 @@ namespace AppName.Logic.Products
             {
                 return Result.Error<Product>($"Nie ma produktu o id {id}.");
             }
+            return Result.Ok(product);
+        }
+
+        public Result<Product> Update(Product product)
+        {
+            if (product == null)
+            {
+                throw new ArgumentNullException(nameof(product));
+            }
+
+            //walidacja
+            
+            _repository.SaveChanges();
+
             return Result.Ok(product);
         }
     }

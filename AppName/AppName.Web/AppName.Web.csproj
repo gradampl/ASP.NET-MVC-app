@@ -155,10 +155,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Products\IndexViewModel.cs" />
+    <Compile Include="ViewModels\Products\ProductViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -199,6 +202,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Products\IndexTable.cshtml" />
+    <Content Include="Views\Products\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -216,6 +222,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppName.Logic\AppName.Logic.csproj">
+      <Project>{3a6f0750-c721-4b0e-8c0e-16751fb2cde0}</Project>
+      <Name>AppName.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppName.Models\AppName.Models.csproj">
+      <Project>{40fede5e-554f-4bb7-a5fa-2bb25a26723b}</Project>
+      <Name>AppName.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppNameDataAccess\AppName.DataAccess.csproj">
+      <Project>{c002675b-1e35-40eb-bba1-48c8988b1333}</Project>
+      <Name>AppName.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

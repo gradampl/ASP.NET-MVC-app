@@ -11,6 +11,7 @@ namespace AppName.Logic.Interfaces
     {
         Result<Product> GetById(int id);
         Result<Product> Create(Product product);
+        Result<Product> Update(Product product);
         Result<IEnumerable<Product>> GetAllActive();
     }
 }

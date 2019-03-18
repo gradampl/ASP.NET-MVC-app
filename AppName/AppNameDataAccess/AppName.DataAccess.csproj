@@ -57,13 +57,19 @@
       <DependentUpon>201902251845125_AddDescriptionToProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AppName.Logic\AppName.Logic.csproj">
+      <Project>{3a6f0750-c721-4b0e-8c0e-16751fb2cde0}</Project>
+      <Name>AppName.Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AppName.Models\AppName.Models.csproj">
       <Project>{40fede5e-554f-4bb7-a5fa-2bb25a26723b}</Project>
       <Name>AppName.Models</Name>
